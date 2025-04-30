@@ -1,0 +1,93 @@
+.promo_bar {
+  background: #000;
+  color: #fff;
+  max-height: 38px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .promo_bar_text {
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+    align-items: center;
+
+    .second_text {
+      text-decoration: underline;
+      cursor: pointer;
+      font-weight: 500;
+    }
+  }
+  .close_icon {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+  gap: 40px;
+}
+
+.logo {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  min-width: 160px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-width: 321px;
+
+  a {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    .icon_arrow {
+      display: flex;
+      align-items: center;
+      margin-left: 5%;
+    }
+  }
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  max-width: 577px;
+  height: 48px;
+
+  background-color: #f0f0f0;
+  padding: 8px 12px;
+  border-radius: 62px;
+  width: 100%;
+  gap: 12px;
+
+  input {
+    border: none;
+    background: transparent;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+  }
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
