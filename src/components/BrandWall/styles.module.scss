@@ -1,0 +1,51 @@
+.brand_wall {
+  width: 100vw;
+  overflow: hidden;
+  background-color: #000;
+  height: 122px;
+  display: flex;
+  align-items: center;
+
+  .brands {
+    display: flex;
+    color: #fff;
+    gap: 106px;
+    animation: slide 20s linear infinite;
+
+    span {
+      font-size: 48px;
+      font-weight: 400;
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+  }
+
+  .brand_versace {
+    font-family: "Playfair Display", serif;
+  }
+
+  .brand_zara {
+    font-family: "Bodoni Moda", serif;
+  }
+
+  .brand_gucci {
+    font-family: "EB Garamond", serif;
+  }
+
+  .brand_prada {
+    font-family: "Cinzel", serif;
+  }
+
+  .brand_calvinklein {
+    font-family: "Work Sans", sans-serif;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-90%);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}
