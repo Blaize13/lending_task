@@ -1,0 +1,49 @@
+.card {
+  .card_image {
+    max-height: 298px;
+    width: 295px;
+    border-radius: 20px;
+  }
+
+  .card_title {
+    font-size: 20px;
+    margin-top: 16px;
+    font-weight: 700;
+  }
+
+  .rating {
+    padding: 8px 0;
+
+    .stars_rate {
+      &:last-child {
+        margin-right: 13px;
+      }
+    }
+  }
+
+  .prices {
+    display: flex;
+    align-items: center;
+    margin-bottom: 36px;
+    font-weight: 700;
+    .newPrice {
+      font-size: 24px;
+    }
+
+    .oldPrice {
+      font-size: 24px;
+      opacity: 40%;
+      text-decoration: line-through;
+      padding: 0 10px;
+    }
+
+    .discount {
+      color: #ff3333;
+      font-size: 12px;
+      background-color: rgba(255, 51, 51, 0.1);
+      opacity: backgroung 20%;
+      padding: 6px 14px;
+      border-radius: 62px;
+    }
+  }
+}

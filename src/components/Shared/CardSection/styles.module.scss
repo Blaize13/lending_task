@@ -1,0 +1,18 @@
+.card_section_title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 48px;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 55px;
+}
+
+.all_cards {
+  display: flex;
+  gap: 20px;
+}
+
+.section_button {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,64 @@
+.button {
+  position: relative;
+  overflow: hidden;
+  width: fit-content;
+  border-radius: 62px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    width: 150%;
+    height: 300%;
+    transition: transform 0.3s ease;
+    z-index: -1;
+  }
+
+  &:hover {
+    &::before {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+}
+
+.black {
+  background-color: #000;
+  color: #fff;
+  &:hover {
+    color: #000;
+  }
+  &::before {
+    background-color: #fff;
+  }
+}
+
+.white {
+  background-color: #fff;
+  color: #000;
+  &:hover {
+    color: #fff;
+  }
+  &::before {
+    background-color: #000;
+  }
+}
+
+.transparent {
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #e6e6e6;
+  &:hover {
+    color: #fff;
+  }
+  &::before {
+    background-color: #000;
+  }
+}
