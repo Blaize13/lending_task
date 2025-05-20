@@ -1,0 +1,28 @@
+.review_card {
+  height: 240px;
+  width: 400px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 28px 32px;
+}
+
+.review_user {
+  display: flex;
+  align-items: center;
+}
+
+.review_user_name {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 5px 12px 0;
+}
+
+.review_text {
+  font-size: 16px;
+  color: #000;
+  opacity: 60%;
+}
+
+.star {
+  margin-right: 7px;
+}

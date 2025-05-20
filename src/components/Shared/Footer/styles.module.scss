@@ -1,0 +1,101 @@
+.footer {
+  background-color: #f0f0f0;
+  height: 500px;
+  width: 100%;
+  padding: 140px 0 88px;
+}
+
+.footer_shop {
+  max-width: 248px;
+
+  .shop_title {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .shop_suptitle {
+    font-size: 14px;
+    color: #000;
+    opacity: 60%;
+    margin: 25px 0 35px;
+    font-weight: 400;
+  }
+
+  .shop_icons {
+    display: flex;
+    gap: 10px;
+
+    .shop_icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      background-color: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      width: 36px;
+      height: 36px;
+      transition: 0.3s ease;
+      &:hover {
+        background-color: #000;
+        a {
+          color: #fff;
+        }
+      }
+    }
+    a {
+      transition: 0.3s ease;
+      color: #000;
+      height: 16px;
+    }
+  }
+}
+
+.footer_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_links {
+  display: flex;
+}
+
+.footer_link {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 113.5px;
+}
+
+.bar {
+  height: 1px;
+  width: 100%;
+  background-color: #000;
+  margin: 50px 0 25px;
+  opacity: 10%;
+}
+
+.copyright_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #000;
+  opacity: 60%;
+  font-weight: 400;
+}
+
+.payment {
+  display: flex;
+  align-items: center;
+
+  & a {
+    width: fit-content;
+    height: fit-content;
+  }
+}

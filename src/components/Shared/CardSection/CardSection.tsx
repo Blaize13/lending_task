@@ -8,7 +8,7 @@ import Button from "../../UI/Button/Button";
 interface ICardSectionProps {
   title: string;
   cards: ICrad[];
-  hasButton: true | false;
+  hasButton: boolean;
 }
 
 const CardSection: React.FC<ICardSectionProps> = ({

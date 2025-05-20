@@ -6,7 +6,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 
   .promo_bar_text {
     display: flex;
@@ -14,6 +13,7 @@
     font-size: 14px;
     align-items: center;
     justify-content: center;
+    position: relative;
 
     .second_text {
       text-decoration: underline;
@@ -53,7 +53,6 @@
   a {
     position: relative;
     display: flex;
-    text-decoration: none;
     color: #000;
     font-weight: 400;
     font-size: 16px;
@@ -91,4 +90,5 @@
   display: flex;
   align-items: center;
   gap: 22px;
+  cursor: pointer;
 }

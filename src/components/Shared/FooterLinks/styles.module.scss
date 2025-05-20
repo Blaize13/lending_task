@@ -1,0 +1,23 @@
+.link_title {
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 26px;
+}
+
+.links {
+  margin-bottom: 23px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  a {
+    color: #000;
+    opacity: 60%;
+    transition: 0.3s ease;
+    &:hover {
+      opacity: 90%;
+    }
+  }
+}

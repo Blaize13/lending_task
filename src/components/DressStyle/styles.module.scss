@@ -1,0 +1,62 @@
+.dress_style_section {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 866px;
+  border-radius: 40px;
+  margin: 80px 0;
+  padding: 70px 64px 76px;
+
+  .dress_style_text {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 48px;
+    font-family: "Oswald", sans-serif;
+  }
+
+  .dress_style_cards {
+    margin-top: 64px;
+    display: grid;
+    grid-template-areas:
+      "casual formal formal"
+      "party party  gym";
+    grid-template-columns: repeat(1fr, 3);
+    grid-template-rows: repeat(289px, 2);
+    gap: 20px;
+  }
+
+  .dress_style {
+    position: relative;
+    object-fit: cover;
+    border-radius: 20px;
+    cursor: pointer;
+    &:hover {
+      scale: 1.03;
+      opacity: 80%;
+    }
+  }
+
+  .dress_style_card_text {
+    position: absolute;
+    font-weight: 700;
+    font-size: 36px;
+    left: 36px;
+    top: 25px;
+  }
+}
+
+.dress_style_casual {
+  grid-area: casual;
+}
+
+.dress_style_formal {
+  grid-area: formal;
+}
+
+.dress_style_party {
+  grid-area: party;
+}
+
+.dress_style_gym {
+  grid-area: gym;
+}

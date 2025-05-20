@@ -4,7 +4,6 @@
   max-height: 663px;
   overflow: hidden;
   display: flex;
-  position: relative;
 
   .hero_info {
     display: flex;
@@ -34,20 +33,21 @@
     display: flex;
     height: 60rem;
     scale: 1.1;
+    position: relative;
   }
 
   .small_star {
     position: absolute;
-    right: 39%;
-    top: 50%;
+    left: 5%;
+    top: 33%;
     z-index: 1;
   }
 
   .big_star {
     position: absolute;
     scale: 1.86;
-    right: 5%;
-    top: 20%;
+    right: 14%;
+    top: 15%;
     z-index: 1;
   }
 }

@@ -3,7 +3,7 @@ import { ICrad } from "../../../data/mock";
 import styles from "./styles.module.scss";
 import fullStar from "../../../assets/icons/star-full.svg";
 import halfStar from "../../../assets/icons/star-half.svg";
-import { spawn } from "child_process";
+import { countStarsRate } from "../../../utils/stars-rate/countStarsRate";
 
 interface ICardProps {
   data: ICrad;
@@ -12,12 +12,7 @@ interface ICardProps {
 const Card: React.FC<ICardProps> = ({ data }) => {
   const { imgSrc, cardTitle, rate, price, discount } = data;
 
-  const fullStars = Math.floor(rate);
-  const hasHalfStar = rate % 1 >= 0.5;
-  const stars = Array(fullStars)
-    .fill("full")
-    .concat(hasHalfStar ? ["half"] : []);
-
+  const stars = countStarsRate(rate);
   const truePrice = discount ? price - (price * discount) / 100 : price;
 
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import hero_img from "../../assets/images/hero-img.jpg";
+import hero_img from "../../assets/images/hero-images/hero_img.jpg";
 import styles from "./styles.module.scss";
 import Button from "../UI/Button/Button";
 import { ReactComponent as Hero_star } from "../../assets/icons/hero-star.svg";
@@ -9,8 +9,6 @@ const Hero = () => {
   return (
     <div>
       <div className={styles.hero}>
-        <Hero_star className={styles.small_star} />
-        <Hero_star className={styles.big_star} />
         <div className={styles.hero_info}>
           <h1 className={styles.hero_title}>
             FIND CLOTHES THAT MATCHES YOUR STYLE
@@ -43,7 +41,11 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <img src={hero_img} alt="Hero" className={styles.hero_img}></img>
+        <div className={styles.hero_img}>
+          <img src={hero_img} alt="Hero" />
+          <Hero_star className={styles.small_star} />
+          <Hero_star className={styles.big_star} />
+        </div>
       </div>
       <BrandWall />
     </div>

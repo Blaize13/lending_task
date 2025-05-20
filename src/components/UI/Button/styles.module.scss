@@ -1,4 +1,5 @@
 .button {
+  border: none;
   position: relative;
   overflow: hidden;
   width: fit-content;
@@ -32,6 +33,7 @@
 .black {
   background-color: #000;
   color: #fff;
+  border: 1px solid #000;
   &:hover {
     color: #000;
   }
@@ -43,6 +45,7 @@
 .white {
   background-color: #fff;
   color: #000;
+  border: 1px solid #fff;
   &:hover {
     color: #fff;
   }
