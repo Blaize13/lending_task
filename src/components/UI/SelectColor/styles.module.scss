@@ -1,0 +1,28 @@
+.title {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 60%;
+  margin-bottom: 16px;
+}
+
+.choose_color {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.circle {
+  width: 37px;
+  height: 37px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon {
+  color: white;
+  width: 16px;
+  height: 16px;
+}

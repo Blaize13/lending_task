@@ -1,0 +1,96 @@
+.tabs {
+  display: flex;
+  margin-bottom: 24px;
+  justify-content: space-around;
+}
+
+.tab {
+  cursor: pointer;
+  position: relative;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.active {
+  color: rgba(0, 0, 0, 1);
+  font-weight: 500;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 413px;
+    bottom: -25px;
+    left: -140px;
+    height: 2px;
+    background-color: #000;
+  }
+}
+
+.reviews_header {
+  display: flex;
+  margin: 12px 0 24px;
+  justify-content: space-between;
+}
+
+.reviews_title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  h3 {
+    color: #000;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  span {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 60%;
+    display: flex;
+  }
+}
+
+.reviews_menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.settings {
+  display: flex;
+  background-color: #f0f0f0;
+  height: 48px;
+  width: 48px;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  gap: 16px;
+  padding: 13px 22px;
+  border-radius: 62px;
+  .icon {
+    cursor: pointer;
+  }
+}
+
+.menu_text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.reviews_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin: 36px 0 64px;
+}

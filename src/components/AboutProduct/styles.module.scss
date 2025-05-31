@@ -1,0 +1,20 @@
+.product_path {
+  display: flex;
+  gap: 5px;
+  color: rgba(0, 0, 0, 0.6);
+  span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .active_path {
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+.product_content {
+  display: flex;
+  padding: 36px 0 80px;
+  gap: 40px;
+}

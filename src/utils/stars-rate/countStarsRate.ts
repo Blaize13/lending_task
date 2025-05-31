@@ -1,5 +1,3 @@
-import { ICrad } from "../../data/mock";
-
 export type StarType = "full" | "half";
 
 export const countStarsRate = (rate: number): StarType[] => {

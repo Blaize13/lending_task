@@ -7,6 +7,8 @@ interface IButton {
   paddingY?: number;
   paddingX?: number;
   onClick?: () => void;
+  className?: string;
+  disabled?: boolean;
 }
 
 const Button: React.FC<IButton> = ({

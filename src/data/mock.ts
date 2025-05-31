@@ -6,6 +6,10 @@ import stripedShirt from "../assets/images/card-images/striped-shirt.png";
 import graphicTShirt from "../assets/images/card-images/graphic-t-shirt.png";
 import bermudaShorts from "../assets/images/card-images/bermuda-shorts.png";
 import fadedSkinnyJeans from "../assets/images/card-images/faded-skinny-jeans.png";
+import contrastTrims from "../assets/images/card-images/polp-contrast-trims.png";
+import gradientTShirt from "../assets/images/card-images/gradient-graphic-t-shirt.png";
+import poloDetails from "../assets/images/card-images/polo-tipping-details.png";
+import blackStripedTShirt from "../assets/images/card-images/black-striped-t-shirt.png";
 
 export interface ICrad {
   id: number;
@@ -72,7 +76,7 @@ export const topSelling = [
     imgSrc: bermudaShorts,
     cardTitle: "Loose Fit Bermuda Shorts",
     rate: 3,
-    price: 180,
+    price: 80,
   },
   {
     id: 4,
@@ -80,5 +84,38 @@ export const topSelling = [
     cardTitle: "Faded Skinny Jeans",
     rate: 4.5,
     price: 210,
+  },
+];
+
+export const alsoLike = [
+  {
+    id: 1,
+    imgSrc: contrastTrims,
+    cardTitle: "Polo with Contrast Trims",
+    rate: 4,
+    price: 242,
+    discount: 20,
+  },
+  {
+    id: 2,
+    imgSrc: gradientTShirt,
+    cardTitle: "Gradient Graphic T-shirt",
+    rate: 3.5,
+    price: 145,
+  },
+  {
+    id: 3,
+    imgSrc: poloDetails,
+    cardTitle: "Polo with Tipping Details",
+    rate: 4.5,
+    price: 180,
+  },
+  {
+    id: 4,
+    imgSrc: blackStripedTShirt,
+    cardTitle: "Black Striped T-shirt",
+    rate: 5,
+    price: 150,
+    discount: 30,
   },
 ];

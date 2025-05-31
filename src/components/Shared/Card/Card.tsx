@@ -4,6 +4,7 @@ import styles from "./styles.module.scss";
 import fullStar from "../../../assets/icons/star-full.svg";
 import halfStar from "../../../assets/icons/star-half.svg";
 import { countStarsRate } from "../../../utils/stars-rate/countStarsRate";
+import { Link } from "react-router-dom";
 
 interface ICardProps {
   data: ICrad;
@@ -18,7 +19,9 @@ const Card: React.FC<ICardProps> = ({ data }) => {
   return (
     <div className={styles.card}>
       <img src={imgSrc} alt={cardTitle} className={styles.card_image} />
-      <h3 className={styles.card_title}>{cardTitle}</h3>
+      <Link to="/card">
+        <h3 className={styles.card_title}>{cardTitle}</h3>
+      </Link>
 
       <div className={styles.rating}>
         {stars.map((type, i) => (

@@ -1,9 +1,17 @@
 .review_card {
-  height: 240px;
-  width: 400px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   padding: 28px 32px;
+}
+
+.top_reviews_card {
+  height: 240px;
+  width: 400px;
+}
+
+.all_reviews_card {
+  width: 610px;
+  height: 240px;
 }
 
 .review_user {
@@ -25,4 +33,11 @@
 
 .star {
   margin-right: 7px;
+}
+
+.posted {
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  opacity: 60%;
 }

@@ -1,0 +1,52 @@
+.about_target {
+  margin-bottom: 80px;
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.rating {
+  display: flex;
+  gap: 7px;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  margin: 4px 0;
+  font-weight: 700;
+  .newPrice {
+    font-size: 32px;
+  }
+
+  .oldPrice {
+    font-size: 32px;
+    opacity: 40%;
+    text-decoration: line-through;
+    padding: 0 10px;
+  }
+
+  .discount {
+    color: #ff3333;
+    font-size: 16px;
+    background-color: rgba(255, 51, 51, 0.1);
+    padding: 6px 14px;
+    border-radius: 62px;
+  }
+}
+
+.sup_title {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 60%;
+  margin-bottom: 18px;
+}
+
+.create_order {
+  display: flex;
+  justify-content: space-between;
+}

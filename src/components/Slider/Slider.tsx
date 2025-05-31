@@ -79,7 +79,7 @@ const Slider: React.FC<ISliderProps> = ({ reviewCards }) => {
         >
           {reviewCards.map((card) => (
             <SwiperSlide className={styles.review_card_slide} key={card.id}>
-              <ReviewCard data={card} />
+              <ReviewCard data={card} variant={"topReviews"} />
             </SwiperSlide>
           ))}
         </Swiper>

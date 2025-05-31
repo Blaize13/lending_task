@@ -1,25 +1,43 @@
-import styles from "./styles.module.scss";
 import { ChevronDown, Search, ShoppingCart, User, X } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+
 import Container from "../../UI/Container/Container";
 
+import styles from "./styles.module.scss";
+
 const Header = () => {
+  const [showPromo, setShowPromo] = useState(true);
+
+  const closePromo = () => {
+    setShowPromo(false);
+  };
+
   return (
     <header>
-      <div className={styles.promo_bar}>
-        <Container>
-          <div className={styles.promo_bar_text}>
-            <span className={styles.first_text}>
-              Sign up and get 20% off to your first order.
-            </span>
-            <span className={styles.second_text}>Sign Up Now</span>
-            <X size={20} strokeWidth={1.25} className={styles.close_icon} />
-          </div>
-        </Container>
-      </div>
-
+      {showPromo && (
+        <div className={styles.promo_bar}>
+          <Container>
+            <div className={styles.promo_bar_text}>
+              <span className={styles.first_text}>
+                Sign up and get 20% off to your first order.
+              </span>
+              <span className={styles.second_text}>Sign Up Now</span>
+              <X
+                size={20}
+                strokeWidth={1.25}
+                className={styles.close_icon}
+                onClick={closePromo}
+              />
+            </div>
+          </Container>
+        </div>
+      )}
       <Container>
         <div className={styles.header}>
-          <div className={styles.logo}>SHOP.CO</div>
+          <Link to="/" className={styles.logo}>
+            SHOP.CO
+          </Link>
 
           <nav className={styles.nav}>
             <a href="#">

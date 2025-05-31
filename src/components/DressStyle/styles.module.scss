@@ -30,9 +30,10 @@
     object-fit: cover;
     border-radius: 20px;
     cursor: pointer;
+    transition: 0.3s ease;
     &:hover {
       scale: 1.03;
-      opacity: 80%;
+      filter: brightness(90%);
     }
   }
 
